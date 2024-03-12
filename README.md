@@ -8,14 +8,15 @@ The element API matches the HTML5 `<video>` tag, so it can be easily swapped wit
 
 ```html
 <html>
-<head>
-  <script type="module" src="https://unpkg.com/shaka-video-element@0.6"></script>
-</head>
-<body>
-
-  <shaka-video controls src="https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe.m3u8"></shaka-video>
-
-</body>
+	<head>
+		<script type="module" src="https://unpkg.com/shaka-video-element@0.6"></script>
+	</head>
+	<body>
+		<shaka-video
+			controls
+			src="https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe.m3u8"
+		></shaka-video>
+	</body>
 </html>
 ```
 
@@ -31,7 +32,7 @@ Note the `type="module"`, that's important.
 
 ```html
 <head>
-  <script type="module" src="https://unpkg.com/shaka-video-element@0.6"></script>
+	<script type="module" src="https://unpkg.com/shaka-video-element@0.6"></script>
 </head>
 ```
 
@@ -42,7 +43,9 @@ npm install shaka-video-element --save
 ```
 
 Include in your app javascript (e.g. src/App.js)
+
 ```js
 import 'shaka-video-element';
 ```
+
 This will register the custom elements with the browser so they can be used as HTML.
